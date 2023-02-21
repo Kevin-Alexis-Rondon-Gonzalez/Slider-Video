@@ -7,7 +7,7 @@
   + HTML ![]()
   + CSS ![]()
   + SCSS ![]()
-  + JavaScript ![]()
+  + JavaScript ![]() 
 -link: https://kevin-alexis-rondon-gonzalez.github.io/Slider-Video/
 
 -![](./img/ScreenDesktop.png)
