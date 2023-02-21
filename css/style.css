@@ -1,1 +1,218 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  background-color: #111;
+  min-height: 100vh;
+}
+section .bannerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section .bannerVideo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+}
+section .bannerVideo video.active {
+  opacity: 1;
+}
+section .container {
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+section .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+}
+section .container header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+section .container header .logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+section .container header ul {
+  position: relative;
+  display: flex;
+}
+section .container header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+section .container header ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 4px 10px;
+  color: #fff;
+}
+section .container header ul li a:hover {
+  background: #fff;
+  color: #111;
+  border-radius: 4px;
+}
+section .container header ul li a.active {
+  background: #fff;
+  color: #111;
+  border-radius: 4px;
+}
+section .container header .menuIcon {
+  display: none;
+}
+section .container .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .container .content .bannerText {
+  position: relative;
+  max-width: 700px;
+}
+section .container .content .bannerText div {
+  display: none;
+  transition: 0.5 ease-in-out;
+}
+section .container .content .bannerText div h2 {
+  color: #fff;
+  font-size: 6em;
+  line-height: 1em;
+  font-weight: 700;
+}
+section .container .content .bannerText div p {
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+section .container .content .bannerText div.active {
+  display: initial;
+}
+section .container .controls {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+}
+section .container .controls li {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 0 2px;
+}
+section .container .controls li:hover {
+  background: #525050;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    padding: 20px;
+  }
+  section .container:before {
+    width: 100%;
+  }
+  section .container header {
+    padding: 10px 20px;
+  }
+  section .container header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 10;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section .container header ul li {
+    text-align: center;
+    margin: 10px;
+  }
+  section .container header ul li a {
+    color: #333;
+    font-size: 1.5em;
+  }
+  section .container header ul li a:hover {
+    color: #f00;
+  }
+  section .container header .menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: initial;
+    z-index: 100;
+    background: #fff url(../img/menu.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transition: 0.25s;
+  }
+  section .container header .menuIcon.active {
+    transition: 0.25s;
+    background: #fff url(../img/close.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  section .container header.active ul {
+    display: flex;
+  }
+  section .container .content .bannerText {
+    max-width: 100%;
+    text-align: center;
+  }
+  section .container .content .bannerText div h2 {
+    font-size: 3em;
+  }
+  section .container .controls li {
+    width: 50px;
+    height: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
