@@ -10,4 +10,4 @@
   + JavaScript ![]()
 
 -![](./img/ScreenDesktop.png)
--![](./img/ScreenMobile.png.png)
+-![](./img/ScreenMobile.png)
